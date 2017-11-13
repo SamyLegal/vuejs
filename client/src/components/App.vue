@@ -1,15 +1,19 @@
 <template>
   <div id="app">
     <h1>{{msg}}</h1>
-    <hello></hello>
-    <grid></grid>
+
+    <router-link to="/date-picker">Date-picker</router-link>
+    <router-link to="/grid">Grid</router-link>
+    <router-view></router-view>
+
+
   </div>
 </template>
 
 <script>
   // Composants
-  import Hello from './components/date-picker.vue';
-  import Grid from './components/grid.vue';
+  import DatePicker from './DatePicker.vue';
+  import Grid from './Grid.vue';
 
   export default {
     name: 'app',
@@ -19,7 +23,7 @@
       }
     },
     components: {
-      Hello,
+      DatePicker,
       Grid
     }
   }

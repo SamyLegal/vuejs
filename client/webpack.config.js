@@ -4,7 +4,7 @@ const CompressionPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/entry-client.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -48,7 +48,9 @@ module.exports = {
     extensions: ['*', '.js', '.vue', '.json']
   },
   devServer: {
-    historyApiFallback: false,
+    // Permet d'utiliser le router vue
+    // en mode "history"
+    historyApiFallback: true,
     noInfo: false,
     overlay: true,
     open: true,
