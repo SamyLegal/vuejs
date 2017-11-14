@@ -1,6 +1,6 @@
 {
-  "name": "vuejs-kendoui",
-  "description": "Vue.js + KendoUI",
+  "name": "vuejs-bootstrap-ssr",
+  "description": "Vue.js + Bootstrap + SSR",
   "version": "1.0.0",
   "author": "legal-s <legal-s@mgdis.fr>",
   "license": "MIT",
@@ -18,15 +18,13 @@
     "not ie <= 8"
   ],
   "devDependencies": {
-    "@progress/kendo-dateinputs-vue-wrapper": "^2017.3.1026",
-    "@progress/kendo-grid-vue-wrapper": "^2017.3.1026",
-    "@progress/kendo-theme-default": "^2.44.0",
-    "@progress/kendo-ui": "^2017.3.1026",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-3": "^6.24.1",
+    "bootstrap": "^4.0.0-beta.2",
+    "bootstrap-vue": "^1.0.2",
     "compression-webpack-plugin": "^1.0.1",
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
