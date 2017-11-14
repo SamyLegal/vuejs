@@ -1,6 +1,7 @@
+const path = require('path');
 const merge = require('webpack-merge');
 const nodeExternals = require('webpack-node-externals');
-const baseConfig = require('../webpack.base.config.js');
+const baseConfig = require('../client/webpack.config.js');
 const VueSSRServerPlugin = require('vue-server-renderer/server-plugin');
 
 // Configuration destinée à générer le bundle serveur
@@ -15,10 +16,12 @@ module.exports = merge(baseConfig, {
   target: 'node',
 
   // Génération des sources maps des paquetages
-  devtool: 'source-map',
+  devtool: 'false',
 
   // Indique à webpack d'utiliser les exports "CommonJs" utilisé par Node.js
   output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: 'server-bundle.js',
     libraryTarget: 'commonjs2'
   },
 
