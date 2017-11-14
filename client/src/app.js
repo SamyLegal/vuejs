@@ -28,7 +28,7 @@ export function createApp() {
   const router = createRouter();
   const store = createStore();
 
-  // synchroniser pour que l'état de la route soit disponible en tant que donnée du store
+  // Synchronisation pour que l'état de la route soit disponible en tant que donnée du store
   sync(store, router);
 
   const app = new Vue({
@@ -49,5 +49,5 @@ export function createApp() {
     }
   });
 
-  return { app, router }
+  return { app, store, router }
 }

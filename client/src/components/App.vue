@@ -4,8 +4,8 @@
 
     <router-link to="/date-picker">Date-picker</router-link>
     <router-link to="/grid">Grid</router-link>
+    <router-link to="/items/1">Items 1</router-link>
     <router-view></router-view>
-
 
   </div>
 </template>

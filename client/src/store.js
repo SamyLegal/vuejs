@@ -14,7 +14,7 @@ export function createStore() {
     },
     actions: {
       fetchItem ({ commit }, id) {
-        // retournant la Promesse via `store.dispatch()`, nous savons
+        // Retourne la Promesse via `store.dispatch()`, nous savons
         // quand les données ont été pré-chargées
         return fetchItem(id).then(item => {
           commit('setItem', { id, item })
